@@ -1,0 +1,6 @@
+Se inicia el servidor con: npm run server
+
+en la etiqueta form del archivo html crear producto agregar el data-from para conectarse con el archivo js
+en el input de las info tambien agregar los data
+
+agregar en los html las conecciones a los archivos script

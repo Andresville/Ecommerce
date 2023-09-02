@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "json-server": "^0.17.3",
+    "sweetalert2": "^11.7.27"
+  },
+  "scripts": {
+    "server": "json-server --watch db.json"
+  }
+}

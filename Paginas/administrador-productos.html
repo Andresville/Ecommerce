@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../IMG/geek_vector.svg">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/administrador-productos.css">
+    <link rel="stylesheet" href="../CSS/productos.css">
+    <link rel="stylesheet" href="../CSS/formulario-login.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/formulario.css">
+    <link rel="stylesheet" href="../CSS/pie.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Alura Geek</title>
+</head>
+
+<body>
+    <header class="header-contenedor">
+        <div class="info">
+            <img src="/IMG/Logo.svg" alt="Logo Alura">
+            <input class="barra__de__busqueda" type="text" placeholder="Que desea buscar">
+            <img class="lupa" src="/IMG/lupa.svg" alt="Lupa">
+        </div>
+        <div class="login">
+            <a class="boton__login" href="/index.html">Inicio</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="productos">
+            <div class="productos__contenedor">
+                <div class="star__wars">       
+                    <div class="productos__head">
+                        <h1 class="productos__head__titulo-principal" data-titulo-busqueda>Todos los productos</h1>
+                        <a class="productos__head__boton" href="./agregar-producto.html">Agregar Producto</a>
+                    </div>
+                    <div class="productos__todos" data-productos-admin>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="footer">
+            <div class="contenido__footer container">
+                <div class="contenido__footer_info">
+                    <img class="header__logo" src="/IMG/Logo.svg" alt="Logo Alura">
+                    <ul class="footer_links">
+                        <li class="footer__enlace"><a href="">Quienes somos</a></li>
+                        <li class="footer__enlace"><a href="">Politica de privacidad</a></li>
+                        <li class="footer__enlace"><a href="">Programa de fidelidad</a></li>
+                        <li class="footer__enlace"><a href="">Nuestras Tiendas</a></li>
+                        <li class="footer__enlace"><a href="">Quiero ser franquiciado</a></li>
+                        <li class="footer__enlace"><a href="">Anuncie aqui</a></li>
+                    </ul>
+                </div>
+                <div class="footer_formulario">
+                    <h3 class="footer_formulario__titulo">Hable con nosotros</h2>
+                        <form action="">
+                            <div class="formulario__input-container">
+                                <input name="nombre" id="nombre" class="input inputs" type="text" placeholder=""
+                                    required data-tipo="nombre">
+                                <label class="input-label" for="nombre">Nombre</label>
+                                <span class="input-message-error">Este campo no es valido</span>
+                            </div>
+                            <div class="formulario__textarea-container">
+                                <textarea name="mensaje" id="mensaje" class="textarea inputs" rows="5" type="text"
+                                    placeholder="" required data-tipo="mensaje"></textarea>
+                                <label class="input-label" for="mensaje">Escribe tu mensaje</label>
+                                <span class="input-message-error">Este campo no es valido</span>
+                            </div>
+                            <input class="boton-form" type="submit" name="enviar" id="enviar" value="Enviar Mensaje">
+                        </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodapie">
+        <p class="rodapie__texto">Desarrollado por Andres Villegas</p>
+        <p class="rodapie__texto">2023</p>
+    </footer>
+
+    <script type="module" src="../JS/validacion-login.js"></script>
+    <script type="module" src="../controllers/administrador-controller.js"></script>
+</body>
+
+</html>

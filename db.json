@@ -1,0 +1,129 @@
+{
+    "productos":[ {
+        "name": "Producto XYZ",
+        "imageURL": "/IMG/Star Wars/Skill.png",
+        "price":"$ 60,00",
+        "id": 1,
+        "categoria": "star-wars"
+    },
+    {
+        "name": "Producto XYZ",
+        "imageURL": "/IMG/Star Wars/Skill-1.png",
+        "price":"$ 60,00",
+        "id": 2,
+        "categoria": "star-wars"
+    },
+    {
+        "name": "Producto XYZ",
+        "imageURL": "/IMG/Star Wars/Skill-2.png",
+        "price":"$ 60,00",
+        "id": 3,
+        "categoria": "star-wars"
+    },
+    {
+        "name": "Producto XYZ",
+        "imageURL": "/IMG/Star Wars/Skill-3.png",
+        "price":"$ 60,00",
+        "id": 4,
+        "categoria": "star-wars"
+    },
+    {
+        "name": "Producto XYZ",
+        "imageURL": "/IMG/Star Wars/Skill-4.png",
+        "price":"$ 60,00",
+        "id": 5,
+        "categoria": "star-wars"
+    },
+    {
+        "name": "Producto XYZ",
+        "imageURL": "/IMG/Star Wars/Skill-5.png",
+        "price":"$ 60,00",
+        "id": 6,
+        "categoria": "star-wars"
+    },
+    {
+        "name": "Control XYZ",
+        "imageURL": "/IMG/Consolas/Skill.png",
+        "price":"$ 60,00",
+        "id": 7,
+        "categoria": "consolas"
+    },
+    {
+        "name": "Control y consola XYZ",
+        "imageURL": "/IMG/Consolas/Skill-1.png",
+        "price":"$ 60,00",
+        "id": 8,
+        "categoria": "consolas"
+    },
+    {
+        "name": "Consola XYZ",
+        "imageURL": "/IMG/Consolas/Skill-2.png",
+        "price":"$ 60,00",
+        "id": 9,
+        "categoria": "consolas"
+    },
+    {
+        "name": "Consola XYZ",
+        "imageURL": "/IMG/Consolas/Skill-3.png",
+        "price":"$ 60,00",
+        "id": 10,
+        "categoria": "consolas"
+    },
+    {
+        "name": "Consola XYZ",
+        "imageURL": "/IMG/Consolas/Skill-4.png",
+        "price":"$ 60,00",
+        "id": 11,
+        "categoria": "consolas"
+    },
+    {
+        "name": "Game Boy Color",
+        "imageURL": "/IMG/Consolas/Skill-5.png",
+        "price":"$ 60,00",
+        "id": 12,
+        "categoria": "consolas"
+    },
+    {
+        "name": "Camisa Atari",
+        "imageURL": "/IMG/Diversos/Skill.png",
+        "price":"$ 60,00",
+        "id": 13,
+        "categoria": "diversos"
+    },
+    {
+        "name": "Camisa SNES",
+        "imageURL": "/IMG/Diversos/Skill-1.png",
+        "price":"$ 60,00",
+        "id": 14,
+        "categoria": "diversos"
+    },
+    {
+        "name": "Control y consola XYZ",
+        "imageURL": "/IMG/Diversos/Skill-2.png",
+        "price":"$ 60,00",
+        "id": 15,
+        "categoria": "diversos"
+    },
+    {
+        "name": "Control y consola XYZ",
+        "imageURL": "/IMG/Diversos/Skill-3.png",
+        "price":"$ 60,00",
+        "id": 16,
+        "categoria": "diversos"
+    },
+    {
+        "name": "Control y consola XYZ",
+        "imageURL": "/IMG/Diversos/Skill-4.png",
+        "price":"$ 60,00",
+        "id": 17,
+        "categoria": "diversos"
+    },
+    {
+        "name": "Producto XYZ",
+        "imageURL": "/IMG/Diversos/Skill-5.png",
+        "price":"$ 60,00",
+        "id": 18,
+        "categoria": "diversos"
+    }
+    ]
+}

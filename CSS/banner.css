@@ -1,0 +1,35 @@
+.banner{
+    background: url(/IMG/banner.png);
+    width: 100%;
+    height: 55vh;
+    background-repeat: no-repeat;
+    
+}
+
+.banner__contenido{
+    position: relative;
+    top:25vh;
+    padding-left: 11%;
+    color: #FFFFFF;
+}
+
+.titulo__banner{
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 3.81rem;
+}
+
+.texto__banner{
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 1.61rem;
+    margin-bottom: 2rem;
+}
+
+.boton__banner{
+    background-color: #2A7AE4;
+    padding: .8rem 1rem;
+    border-radius: 5px;
+}

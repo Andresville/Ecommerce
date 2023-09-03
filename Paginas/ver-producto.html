@@ -32,19 +32,26 @@
     </header>
 
     <main>
-        <section class="productos">
-            <div class="productos__contenedor">
-                <div class="star__wars">       
-                    <div class="productos__head">
-                        <h1 class="productos__head__titulo-principal" data-titulo-busqueda>Todos los productos</h1>
-                        <a class="productos__head__boton" href="./agregar-producto.html">Agregar Producto</a>
-                    </div>
-                    <div class="productos__todos" data-productos-admin>
-                    </div>
-                </div>
+        
+        <section class="seccion__producto">
+            <div class="producto__container" data-producto>
+                
             </div>
         </section>
         
+        <section class="productos">
+            <div class="productos__contenedor">
+                <div class="diversos">
+                    <div class="texto__diversos">
+                        <h1 class="titulo__diversos">Productos Similares</h1>
+                    </div>
+                    <div class="productos__diversos" data-productos-similares>
+                        
+                    </div>
+                </div>    
+            </div>
+        </section>
+
         <section class="footer">
             <div class="contenido__footer container">
                 <div class="contenido__footer_info">
@@ -85,8 +92,9 @@
         <p class="rodapie__texto">2023</p>
     </footer>
 
-    <script type="module" src="../JS/validacion-login.js"></script>
-    <script type="module" src="../controllers/administrador-controller.js"></script>
+    
+    <script type="module" src="../controllers/ver-producto-controller.js"></script>
+
 </body>
 
 </html>

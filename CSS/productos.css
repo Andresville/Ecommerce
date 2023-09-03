@@ -95,3 +95,17 @@
     padding-top: .5rem;
     margin-bottom: 2rem;
 }
+
+.boton-eliminar{
+    position: absolute;
+    margin-top: rem;
+    margin-left: -3rem;
+    transition: transform .2s; 
+}
+
+.boton-editar{
+    position: absolute;
+    margin-top: rem;
+    margin-left: -1.5rem;
+    transition: transform .2s; 
+}

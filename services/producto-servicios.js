@@ -33,8 +33,10 @@ const eliminarProducto = (id) => {
 };
 
 //Detalles del producto por ID
-const detalleProducto = async (id) => {
-    return fetch(`http://localhost:3000/productos/${id}`).then(respuesta => respuesta.json());
+const detalleProducto = (id) => {
+    return fetch(`http://localhost:3000/productos/${id}`)
+        .then(respuesta => respuesta.json())
+        .catch(error => console.log(error))
 };
 
 const actualizarProducto = (name, price, imageURL, id, categoria) => {

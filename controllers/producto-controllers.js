@@ -8,7 +8,7 @@ const nuevoProducto = (name, imageURL, price, id)=>{
         <img class="imagen" src="${imageURL}" alt="Foto Producto">
         <p class="texto__imagen">${name}</p>
         <p class="precio__producto">${price}</p>
-        <a class="boton__producto" href="" id=${id}>Ver producto</a>
+        <a class="boton__producto" href="../Paginas/ver-producto.html?id=${id}">Ver producto</a>
     </div>
     `;
 

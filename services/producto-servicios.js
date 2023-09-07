@@ -4,7 +4,7 @@ const listaProductos = () => {
         .catch(error => console.log(error))
 };
 
-const crearProductos = (name, imageURL, price, id) => {
+const crearProductos = (name, imageURL, price, categoria, descripcion) => {
     return fetch("http://localhost:3000/productos", {
         method: "POST",
         headers: {
@@ -14,7 +14,9 @@ const crearProductos = (name, imageURL, price, id) => {
             name,
             imageURL,
             price,
-            id,
+           
+            categoria,
+            descripcion
         })
     })
         .then(respuesta => {
@@ -39,7 +41,7 @@ const detalleProducto = (id) => {
         .catch(error => console.log(error))
 };
 
-const actualizarProducto = (name, price, imageURL, id, categoria) => {
+const actualizarProducto = (name, price, imageURL, id, categoria, descripcion) => {
     return fetch(`http://localhost:3000/productos/${id}`, {
         method: "PUT",
         headers: {
@@ -49,7 +51,8 @@ const actualizarProducto = (name, price, imageURL, id, categoria) => {
             name, 
             price, 
             imageURL, 
-            categoria 
+            categoria,
+            descripcion
         })
     }).then(respuesta => respuesta).catch(error => console.log(error));
 };

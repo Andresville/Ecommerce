@@ -40,6 +40,7 @@ const obtenerInformacion = async () => {
             <h2 class="producto__info__titulo">${producto.name}</h2>
             <p class="producto__info__valor">${producto.price}</p>
             <p class="producto__info__descripcion">${producto.categoria}</p>
+            <p class="producto__info__descripcion">${producto.descripcion}</p>
         </div>
       ` 
       //Pasamos los detalles del producto

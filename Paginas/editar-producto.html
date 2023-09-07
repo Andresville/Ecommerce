@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../CSS/ver-producto.css">
     <link rel="stylesheet" href="../CSS/productos.css">
     <link rel="stylesheet" href="../CSS/formulario-login.css">
+    <link rel="stylesheet" href="../CSS/editar-producto.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/formulario.css">
     <link rel="stylesheet" href="../CSS/pie.css">
@@ -27,20 +28,54 @@
             <img class="lupa" src="/IMG/lupa.svg" alt="Lupa">
         </div>
         <div class="login">
-            <a class="boton__login" href="/index.html">Inicio</a>
+            <a class="boton__login" href="administrador-productos.html">Volver</a>
         </div>
     </header>
 
     <main>
         <section class="productos">
-            <div class="productos__contenedor">
-                <div class="star__wars">       
-                    <div class="productos__head">
-                        <h1 class="productos__head__titulo-principal" data-titulo-busqueda>Todos los productos</h1>
-                        <a class="productos__head__boton" href="agregar-producto.html">Agregar Producto</a>
-                    </div>
-                    <div class="productos__todos" data-productos-admin>
-                    </div>
+            <div class="formulario">
+                <div class="formulario-login container">
+                    <h3 class="formulario-login__titulo">Edicion de Producto</h2>
+                    <form action="" class="formulario-login_form" data-form-registro>
+                        <div class="imagen">
+                            <div class="imagen-drop" data-drag-area>
+                                <img class="imagen-drop-img" src="../IMG/Vector-imagen.svg" alt="icono agrega imagen" data-imagen>
+                                <img class="imagen-drop-img__pantalla-mobile" src="../IMG/Vector-imagen_mobile.svg" alt="icono agrega imagen">
+                                <p class="imagen-drop-texto">Arrastre para agregar una imagen para el producto</p>
+                            </div>
+                            <p class="texto_o">O</p>
+                            <div class="imagen-boton">
+                                <label for="agregar__imagen__boton" class="agregar__imagen__boton__texto">Busque en su dispositivo</label>
+                                <input type="file" name="imagen" id="agregar__imagen__boton" class="agregar__imagen__boton" name="fileinput" />
+                            </div>
+                        </div>
+                        <div class="formulario-login__input-container">
+                            <input name="producto" id="producto" class="input inputs" type="text" placeholder="" required data-tipo="nombreProducto" pattern="^[\s\S]{0,40}$"  data-form-producto-nombre>
+                            <label class="input-label" for="producto">Nombre del producto</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <div class="formulario-login__input-container">
+                            <input name="precio" id="precio" class="input input-precio inputs" type="text" placeholder="" required data-tipo="precioProducto"   data-form-producto-precio>
+                            <label class="input-label" for="precio">Precio del producto</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <div class="formulario-login__select">
+                            <p>Categoria</p>
+                            <select class="select-css" data-form-producto-categoria>
+                                <option>Elige una Categoria</option>
+                                <option>star-wars</option>
+                                <option>consolas</option>
+                                <option>diversos</option>
+                            </select>
+                        </div>
+                        <div class="formulario__textarea-container">
+                            <textarea name="descripcion" id="descripcion" class="textarea inputs" rows="5" type="text" placeholder="" required data-tipo="descripcionProducto" maxlength="300" data-form-producto-descripcion></textarea>
+                            <label class="input-label" for="descripcion">Descripcion del producto</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <input class="boton-formulario-login" type="submit" name="enviar" id="Enviar" value="Editar Producto">
+                    </form>
                 </div>
             </div>
         </section>
@@ -86,7 +121,9 @@
     </footer>
 
     <script type="module" src="../JS/validacion-login.js"></script>
-    <script type="module" src="../controllers/administrador-controller.js"></script>
+    <script src="../JS/arrastre-imagen.js"></script>
+    <script type="module" src="../controllers/actualizar-controller.js"></script>
+    
 </body>
 
 </html>

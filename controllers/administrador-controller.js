@@ -8,7 +8,7 @@ const nuevoProducto = (name, imageURL, price, id) => {
         <div>
         <img class="imagen" src="${imageURL}" alt="Foto Producto">
         <a class="boton-eliminar" id="${id}" href="#"><img src="/IMG/eliminar-boton.svg" alt="boton eliminar"></a>
-        <a class="boton-editar" href="../screens/editar-producto.html?id=${id}"><img src="/IMG/editar-boton.svg" alt="boton editar"></a>
+        <a class="boton-editar" href="../Paginas/editar-producto.html?id=${id}"><img src="/IMG/editar-boton.svg" alt="boton editar"></a>
         </div>
         <p class="texto__imagen">${name}</p>
         <p class="precio__producto">${price}</p>
@@ -17,9 +17,20 @@ const nuevoProducto = (name, imageURL, price, id) => {
     `;
 
     card.innerHTML = contenido;
-       
+
+    //Eliminar
+
+    const eliminarProducto = card.querySelector(".boton-eliminar");
+
+    eliminarProducto.addEventListener("click", evento => {
+        const id = eliminarProducto.id;
+        productoServices.eliminarProducto(id)
+    });
+
+
     return card;
 };
+
 
 
 const productos = document.querySelector("[data-productos-admin]");
@@ -29,10 +40,10 @@ const render = async () => {
     try {
         const listaProducto = await productoServices.listaProductos()
 
-        listaProducto.forEach(({ name, price, imageURL, id, categoria }) => {
+        listaProducto.forEach(({ name, price, imageURL, id, categoria, descripcion }) => {
             if (categoria === "star-wars" || categoria === "consolas" || categoria === "diversos") {
                 productos.appendChild(
-                    nuevoProducto(name, imageURL, price, id))
+                    nuevoProducto(name, imageURL, price, id, descripcion, categoria))
             }
         });
     } catch (error) {
